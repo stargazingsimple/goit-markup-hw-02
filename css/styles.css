@@ -11,11 +11,14 @@
   --hero-bg-color: #2f303a;
   --team-bg-color: #f5f4fa;
   --footer-bg-color: #2f303a;
+
+  --porfolio-btn-color: #f5f4fa;
 }
 
 body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
+  color: var(--primary-text-color);
   background-color: var(--main-bg-color);
 }
 
@@ -67,7 +70,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--primary-text-color);
+  color: inherit;
 }
 
 .header-contact-link:hover,
@@ -117,7 +120,6 @@ body {
 .feature-text {
   font-size: 14px;
   line-height: 1.71;
-  color: var(--primary-text-color);
 }
 
 /* -------TEAM------- */
@@ -138,7 +140,6 @@ body {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  color: var(--primary-text-color);
 }
 
 /* -------FOOTER------- */
@@ -165,4 +166,39 @@ body {
 .footer-address-link:hover,
 .footer-address-focust:hover {
   color: var(--accent-color);
+}
+
+/* -------PORTFOLIO------- */
+
+.project-filter-btn {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  color: var(--nav-menu-text-color);
+  background-color: var(--porfolio-btn-color);
+}
+
+.project-filter-btn:hover,
+.project-filter-btn:focus {
+  background-color: var(--accent-color);
+  color: var(--second-text-color);
+}
+
+.project-list-link {
+  color: inherit;
+}
+
+.project-list-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+
+.project-list-text {
+  font-size: 16px;
+  line-height: 1.87;
 }
